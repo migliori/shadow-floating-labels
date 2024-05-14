@@ -1,8 +1,15 @@
 # ShadowFloatingLabels
 
+![JavaScript](https://img.shields.io/badge/language-JavaScript-f0db4f.svg)
+![Size](https://img.shields.io/badge/size-1.25ko%20gzip-brightgreen.svg)
+![License](https://img.shields.io/badge/license-GPL--3.0-5a8c9e.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-007ec6.svg)
+
 ShadowFloatingLabels is a lightweight (1.25ko gzip), versatile JavaScript library designed to enhance form usability by transforming placeholders into floating labels using the Shadow DOM.
 
 It seamlessly integrates with any HTML structure and CSS framework, ensuring a smooth and visually appealing user experience across all web applications.
+
+![Screenshot](screenshot.png)
 
 ## Features
 

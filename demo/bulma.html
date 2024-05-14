@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Floating Labels Bulma demo</title>
+    <meta name="description" content="A demonstration of Shadow Floating Labels with Bulma. Showcasing custom form styles and interactions.">
+    <meta name="author" content="Migliori">
+    <meta name="keywords" content="shadow, floating, labels, form, input, field, bulma, demo">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <!-- load Bulma css from cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- load Font Awesome icons from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">
+                Shadow Floating Labels - <small class="has-text-grey">Bulma demo</small>
+            </h1>
+            <p class="has-text-centered">
+                <a class="button is-light" href="https://github.com/migliori/shadow-floating-labels">View on Github &nbsp;
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                </a>
+            </p>
+            <p>&nbsp;</p>
+            <!-- github-ribbon -->
+            <a class="github-fork-ribbon" href="https://github.com/migliori/shadow-floating-labels" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+            <!-- demo content -->
+            <nav class="level">
+                <div class="level-item has-text-centered">
+                    <a class="button is-light" href="index.html">Bootstrap 5 demo</a>
+                </div>
+                <div class="level-item has-text-centered">
+                    <a class="button is-light is-active" href="#">Bulma demo</a>
+                </div>
+                <div class="level-item has-text-centered">
+                    <a class="button is-light" href="foundation.html">Foundation demo</a>
+                </div>
+                <div class="level-item has-text-centered">
+                    <a class="button is-light" href="tailwind.html">Tailwind demo</a>
+                </div>
+                <div class="level-item has-text-centered">
+                    <a class="button is-light" href="uikit.html">UiKit demo</a>
+                </div>
+            </nav>
+            <div class="box">
+                <h2 class="title is-4 has-text-centered">Shadow Floating Labels</h2>
+                <p class="subtitle is-6 has-text-grey">
+                    <em>Shadow Floating Labels</em> is a JavaScript library that enhances the user experience by animating form labels when the user interacts with the input fields.
+                </p>
+                <p>This demo showcases the Shadow Floating Labels library with <strong>Bulma</strong>.</p>
+            </div>
+
+            <form action="" class="floating-labels">
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Placeholder 1">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Placeholder 2" value="Default Value">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Placeholder 3">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="inputWithLabel">Label</label>
+                            <div class="control">
+                                <input class="input" id="inputWithLabel" type="text" placeholder="Placeholder 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field has-addons">
+                            <p class="control">
+                                <a class="button is-static">
+                                    <span class="icon">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </a>
+                            </p>
+                            <p class="control is-expanded">
+                                <input class="input" type="text" placeholder="With icon before">
+                            </p>
+                        </div>
+                        <div class="field has-addons">
+                            <p class="control is-expanded">
+                                <input class="input" type="text" placeholder="With icon after">
+                            </p>
+                            <p class="control">
+                                <a class="button is-static">
+                                    <span class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="field has-addons">
+                            <p class="control">
+                                <a class="button is-static">
+                                    <span class="icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </a>
+                            </p>
+                            <p class="control is-expanded">
+                                <input class="input" type="text" name="searchInput" placeholder="Search">
+                            </p>
+                            <p class="control">
+                                <button type="button" class="button" name="searchResetButton">
+                                    <span class="icon is-small">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                </button>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="inputWithAddonAfter">Label</label>
+                            <div class="control has-icons-right">
+                                <input class="input" id="inputWithAddonAfter" type="text" placeholder="With addon after">
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-at"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea" name="textarea" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                        <button type="reset" class="button is-light">Reset</button>
+                    </p>
+                    <p class="control">
+                        <button type="submit" class="button is-primary">Submit</button>
+                    </p>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <!-- load Shadow Floating Labels script -->
+    <script src="../src/ShadowFloatingLabels.min.js"></script>
+    <!-- Initialize Shadow Floating Labels -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const shadowFloatingLabels = new ShadowFloatingLabels();
+
+            document.querySelector('button[name="searchResetButton"]').addEventListener('click', () => {
+                document.querySelector('input[name="searchInput"]').value = '';
+                shadowFloatingLabels.refreshFields('input[name="searchInput"]');
+            });
+        });
+    </script>
+</body>
+
+</html>

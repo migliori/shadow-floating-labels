@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Floating Labels Foundation demo</title>
+    <meta name="description" content="A demonstration of Shadow Floating Labels with Foundation. Showcasing custom form styles and interactions.">
+    <meta name="author" content="Migliori">
+    <meta name="keywords" content="shadow, floating, labels, form, input, field, foundation, demo">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <!-- load Foundation css from cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css">
+    <!-- load Font Awesome icons from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <h1 class="text-center" style="margin:1em auto">
+        Shadow Floating Labels - <small class="text-muted">Foundation demo</small>
+    </h1>
+    <p class="text-center">
+        <a class="button hollow secondary" href="https://github.com/migliori/shadow-floating-labels">View on Github
+            <img src="assets/images/github.svg" width="24px" height="24px" alt="View on Github">
+        </a>
+    </p>
+    <!-- github-ribbon -->
+    <a class="github-fork-ribbon" href="https://github.com/migliori/shadow-floating-labels" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <!-- demo content -->
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x align-justify" style="margin:1em auto">
+            <nav class="menu align-center" style="width:100%">
+                <a class="button hollow secondary" href="index.html">Bootstrap 5 demo</a>
+                <a class="button hollow secondary" href="bulma.html">Bulma demo</a>
+                <a class="button hollow primary" href="#">Foundation demo</a>
+                <a class="button hollow secondary" href="tailwind.html">Tailwind  demo</a>
+                <a class="button hollow secondary" href="uikit.html">UiKit  demo</a>
+            </nav>
+
+            <p>&nbsp;</p>
+
+            <section class="cell small-12 p-4 callout">
+                <h2 class="text-center mb-3">Shadow Floating Labels</h2>
+                <p class="subheader">
+                    <em>Shadow Floating Labels</em> is a JavaScript library that enhances the user experience by animating form labels when the user interacts with the input fields.
+                </p>
+                <p>It is a free lightweight library that does not require any dependencies and is framework-agnostic. It can be used in any situation regardless of the structure of the HTML code or the CSS framework used.</p>
+                <p class="mb-0">This demo showcases the Shadow Floating Labels library with <strong>Foundation</strong>.</p>
+            </section>
+
+            <form action="" class="floating-labels" style="width:100%">
+                <fieldset class="fieldset">
+                    <legend>Form Fields with floating labels</legend>
+                    <div class="grid-x grid-margin-x">
+                        <!-- 1st Column -->
+                        <div class="cell medium-6">
+                                <input type="text" placeholder="Placeholder 1">
+                                <input type="text" placeholder="Placeholder 2" value="Default Value">
+                            <label>
+                                <input type="text">
+                            </label>
+                            <label for="inputWithLabel">Label
+                                <input type="text" id="inputWithLabel" placeholder="Placeholder 3">
+                            </label>
+                        </div>
+                        <!-- 2nd Column -->
+                        <div class="cell medium-6">
+                            <div class="input-group">
+                                <span class="input-group-label"><i class="fa fa-user"></i></span>
+                                <input class="input-group-field" type="text" placeholder="With icon before">
+                            </div>
+                            <div class="input-group">
+                                <input class="input-group-field" type="text" placeholder="With icon after">
+                                <span class="input-group-label"><i class="fa fa-envelope"></i></span>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-label"><i class="fa fa-search"></i></span>
+                                <input type="text" name="searchInput" class="input-group-field" placeholder="Search">
+                                <div class="input-group-button">
+                                    <button name="searchResetButton" class="button hollow secondary" type="button">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <label for="inputWithAddonAfter">Label
+                                <div class="input-group">
+                                    <input type="text" id="inputWithAddonAfter" placeholder="With addon after" style="margin-bottom:0">
+                                    <span class="input-group-label">@example.com</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="cell small-12">
+                            <label>Your message
+                                <textarea name="textarea" rows="5" placeholder="Your message"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="text-center">
+                    <button type="reset" class="button hollow secondary">Reset</button>
+                    <button type="submit" class="button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- load Shadow Floating Labels script -->
+    <script src="../src/ShadowFloatingLabels.min.js"></script>
+    <!-- Initialize Shadow Floating Labels -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const shadowFloatingLabels = new ShadowFloatingLabels();
+
+            document.querySelector('button[name="searchResetButton"]').addEventListener('click', () => {
+                document.querySelector('input[name="searchInput"]').value = '';
+                shadowFloatingLabels.refreshFields('input[name="searchInput"]');
+            });
+        });
+    </script>
+</body>
+
+</html>

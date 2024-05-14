@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Floating Labels Tailwind demo</title>
+    <meta name="description" content="A demonstration of Shadow Floating Labels with Tailwind. Showcasing custom form styles and interactions.">
+    <meta name="author" content="Migliori">
+    <meta name="keywords" content="shadow, floating, labels, form, input, field, tailwind, demo">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <!-- load Tailwind CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- load FontAwesome icons from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+    <h1 class="text-center text-4xl my-10">
+        Shadow Floating Labels - <small class="text-gray-500">Tailwind demo</small>
+    </h1>
+    <p class="text-center mb-10">
+        <a class="inline-block border border-gray-200 text-gray-800 rounded py-2 px-4 hover:bg-gray-200" href="https://github.com/migliori/shadow-floating-labels">View on Github
+            <i class="fab fa-github ml-2"></i>
+        </a>
+    </p>
+    <!-- github-ribbon -->
+    <a class="github-fork-ribbon" href="https://github.com/migliori/shadow-floating-labels" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <!-- demo content -->
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-4 mb-10">
+        <nav class="col-span-5 md:col-span-5 grid grid-cols-5 gap-4">
+            <a class="py-2 px-4 text-gray-700 hover:bg-gray-200 rounded" href="index.html">Bootstrap 5 demo</a>
+            <a class="py-2 px-4 text-gray-700 hover:bg-gray-200 rounded" href="bulma.html">Bulma  demo</a>
+            <a class="py-2 px-4 text-gray-700 hover:bg-gray-200 rounded" href="foundation.html">Foundation  demo</a>
+            <a class="py-2 px-4 text-green-700 bg-green-200 rounded hover:bg-green-300" href="#">Tailwind demo</a>
+            <a class="py-2 px-4 text-gray-700 hover:bg-gray-200 rounded" href="uikit.html">UiKit  demo</a>
+        </nav>
+    </div>
+
+    <section class="p-8 bg-white border border-gray-200 rounded-3 mb-10 mx-auto w-3/4">
+        <h2 class="font-bold text-center mb-3 text-xl">Shadow Floating Labels</h2>
+        <p class="italic text-gray-500 text-center">
+            <em>Shadow Floating Labels</em> is a JavaScript library that enhances the user experience by animating form labels when the user interacts with the input fields.
+        </p>
+        <p>This demo showcases the Shadow Floating Labels library with <strong>Tailwind</strong>.</p>
+    </section>
+
+    <div class="mx-auto px-4">
+    <form action="" class="floating-labels mx-auto w-3/4">
+        <fieldset>
+            <legend class="text-lg font-semibold mb-4">Form Fields with floating labels</legend>
+            <div class="grid grid-cols-12 gap-4 mb-7">
+                <!-- 1st Column -->
+                <div class="col-span-12 sm:col-span-6 relative">
+                    <div class="mb-4">
+                        <input id="input-with-icon-after" name="input-with-icon-after" type="text" value="" placeholder="Placeholder 1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500;focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pr-10">
+                    </div>
+                    <div class="mb-4">
+                        <input id="input-with-icon-after" name="input-with-icon-after" type="text" value="Default Value" placeholder="Placeholder 2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500;focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pr-10">
+                    </div>
+                    <div class="mb-4">
+                        <input id="input-with-icon-after" name="input-with-icon-after" type="text" value="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500;focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pr-10">
+                    </div>
+                    <div class="mb-4">
+                        <label for="user-name" class="block mb-2">Label</label>
+                        <input id="user-name" name="user-name" type="text" value="" placeholder="Placeholder 3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500;focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    </div>
+                </div>
+                <!-- 2nd Column -->
+                <div class="col-span-12 sm:col-span-6 relative">
+                    <div class="input-group mb-4">
+                        <div class="col-span-12 sm:col-span-9 relative has-icons-right">
+                            <div class="flex absolute icon is-left inset-y-0 left-0 items-center pl-3 pointer-events-none z-10"><i class="fas fa-user"></i></div><input id="input-with-icon-before" name="input-with-icon-before" placeholder="With icon before" type="text" value="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500;focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pl-10">
+                        </div>
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="col-span-12 sm:col-span-12 relative has-icons-right" style="position: relative;"><input id="input-with-icon-and-placeholder" name="input-with-icon-and-placeholder" type="text" value="" placeholder="With icon after" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500;focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pr-10" aria-label="Your name">
+                            <div class="icon is-right flex absolute inset-y-0 right-0 items-center pr-3 pointer-events-none;z-10"><i class="fas fa-envelope"></i></div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="col-span-12 sm:col-span-9 relative">
+                            <div class="flex addon-after has-icons-right">
+                                <div class="flex absolute icon is-left inset-y-0 left-0 items-center pl-3 pointer-events-none z-10"><i class="fas fa-search"></i></div><input name="searchInput" type="text" value="" placeholder="Search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l-lg focus:ring-blue-500;focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pr-10 pl-10"><button name="searchResetButton" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-r-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900" type="button"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="col-span-12 sm:col-span-9 relative">
+                            <label for="with-addon-after" class="block mb-2">Label</label>
+                            <div class="flex addon-after has-icons-right">
+                                <input name="with-addon-after" type="text" placeholder="With addon after" value="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l-lg focus:ring-blue-500;focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pr-10"><span class="phpfb-addon-after inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-r-md border border-l-0 border-gray-300 dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">@example.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="grid grid-cols-1 mb-7">
+                    <textarea name="message" rows="7" placeholder="Your message" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500;focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" aria-label="Message"></textarea>
+                </div>
+        </fieldset>
+
+        <div class="text-center mt-6">
+            <div class="inline-flex rounded-md shadow-sm" role="group">
+                <button type="reset" class="py-2 px-4 text-gray-700 bg-gray-200 rounded hover:bg-gray-300">Reset</button>
+                <button type="submit" class="py-2 px-4 text-white bg-blue-500 rounded hover:bg-blue-600">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+    <!-- load Shadow Floating Labels script -->
+    <script src="../src/ShadowFloatingLabels.min.js"></script>
+    <!-- Initialize Shadow Floating Labels -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const shadowFloatingLabels = new ShadowFloatingLabels();
+
+            document.querySelector('button[name="searchResetButton"]').addEventListener('click', () => {
+                document.querySelector('input[name="searchInput"]').value = '';
+                shadowFloatingLabels.refreshFields('input[name="searchInput"]');
+            });
+        });
+    </script>
+</body>
+
+</html>

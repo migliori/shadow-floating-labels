@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Floating Labels UiKit demo</title>
+    <meta name="description" content="A demonstration of Shadow Floating Labels with UiKit. Showcasing custom form styles and interactions.">
+    <meta name="author" content="Migliori">
+    <meta name="keywords" content="shadow, floating, labels, form, input, field, uikit, demo">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <!-- load UiKit css from cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.20.10/dist/css/uikit.min.css">
+</head>
+
+<body>
+    <h1 class="uk-text-center uk-margin-large-top">
+        Shadow Floating Labels - <small class="uk-text-muted">UiKit demo</small>
+    </h1>
+    <p class="uk-text-center uk-margin-large-bottom">
+        <a class="uk-button uk-button-default" href="https://github.com/migliori/shadow-floating-labels">View on Github
+            <img src="assets/images/github.svg" width="24px" height="24px" alt="View on Github">
+        </a>
+    </p>
+    <!-- github-ribbon -->
+    <a class="github-fork-ribbon" href="https://github.com/migliori/shadow-floating-labels" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <!-- demo content -->
+    <div class="uk-container uk-margin-large-bottom">
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li><a href="index.html">bootstrap 5 demo</a></li>
+                    <li class="uk-margin-small-left uk-margin-small-right"><a href="bulma.html">Bulma demo</a></li>
+                    <li class="uk-margin-small-left uk-margin-small-right"><a href="foundation.html">Foundation demo</a></li>
+                    <li class="uk-margin-small-left uk-margin-small-right"><a href="tailwind.html">Tailwind demo</a></li>
+                    <li class="uk-active"><a href="#">UiKit demo</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <p>&nbsp;</p>
+
+        <section class="uk-padding uk-background-muted uk-border-rounded uk-margin-large-bottom">
+            <h2 class="uk-text-bold uk-text-center uk-margin-medium-bottom">Shadow Floating Labels</h2>
+            <p class="uk-text-italic uk-text-muted">
+                <em>Shadow Floating Labels</em> is a JavaScript library that enhances the user experience by animating form labels when the user interacts with the input fields.
+            </p>
+            <p>It is a free lightweight library that does not require any dependencies and is framework-agnostic. It can be used in any situation regardless of the structure of the HTML code or the CSS framework used.</p>
+            <p class="uk-margin-remove">This demo showcases the Shadow Floating Labels library with <strong>UiKit</strong>.</p>
+        </section>
+
+        <form action="" class="floating-labels">
+            <fieldset class="uk-fieldset">
+                <legend class="uk-legend">Form Fields with floating labels</legend>
+                <div class="uk-grid-small" uk-grid>
+                    <!-- 1st Column -->
+                    <div class="uk-width-1-2@s">
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Placeholder 1">
+                        </div>
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Placeholder 2" value="Default Value">
+                        </div>
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text">
+                        </div>
+                        <div class="uk-margin">
+                            <label for="inputWithLabel" class="uk-form-label">Label</label>
+                            <input class="uk-input" id="inputWithLabel" type="text" placeholder="Placeholder 3">
+                        </div>
+                    </div>
+                    <!-- 2nd Column -->
+                    <div class="uk-width-1-2@s">
+                        <div class="uk-margin">
+                            <div class="uk-inline uk-width-1-1">
+                                <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                <input class="uk-input" type="text" placeholder="With icon before">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <div class="uk-inline uk-width-1-1">
+                                <input class="uk-input" type="text" placeholder="With icon after">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <div class="uk-inline uk-width-1-1">
+                                <div class="uk-flex uk-position-relative">
+                                    <span class="uk-form-icon" uk-icon="icon: search"></span>
+                                    <input class="uk-input" name="searchInput" type="text" placeholder="Search">
+                                    <button name="searchResetButton" class="uk-button uk-button-default uk-text-nowrap addon-after uk-form-icon-flip phpfb-addon-after" type="button"><span uk-icon="icon: close"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label for="inputWithAddonAfter" class="uk-form-label">Label</label>
+                            <div class="uk-inline uk-width-1-1">
+                                <div class="uk-flex uk-position-relative">
+                                    <input class="uk-input" id="inputWithAddonAfter" type="text" placeholder="With addon after">
+                                    <span class="uk-form-icon uk-form-icon-flip" style="width: auto;margin-right:.5em;">@example.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-margin uk-width-1-1">
+                        <textarea name="textarea" class="uk-textarea" rows="5" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="uk-text-center uk-margin-top">
+                <div class="uk-button-group">
+                    <button type="reset" class="uk-button uk-button-default">Reset</button>
+                    <button type="submit" class="uk-button uk-button-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- load Shadow Floating Labels script -->
+    <script src="../src/ShadowFloatingLabels.min.js"></script>
+    <!-- Initialize Shadow Floating Labels -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const shadowFloatingLabels = new ShadowFloatingLabels();
+
+            document.querySelector('button[name="searchResetButton"]').addEventListener('click', () => {
+                document.querySelector('input[name="searchInput"]').value = '';
+                shadowFloatingLabels.refreshFields('input[name="searchInput"]');
+            });
+        });
+    </script>
+    <!-- load UiKit js from cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.10/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
